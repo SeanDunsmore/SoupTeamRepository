@@ -23,15 +23,39 @@ public class GridBehaviour
         {
             for (int y = 0; y < gridArray.GetLength(1); y++)
             {
-                GameObject gameObject = new GameObject("world_text", typeof(TextMesh));
 
 
+          
             }
         }
     }
    
 
-   // [SeralizeField] private GameObject GridCellPrefab;
+    //Create Text
+    public static TextMesh CreateWorldText(Transform parent, string text, Vector3 localPosition, int fontSize, Color color, TextAnchor textAnchor, TextAlignment textAlignment, int sortingOrder)
+    {
+
+        //Create a game object to place text position in world
+        GameObject gameObject = new GameObject("world_text", typeof(TextMesh));
+        Transform transform = gameObject.transform;
+        transform.SetParent(parent, false);
+        transform.localPosition = localPosition;
+
+        //Create text
+        TextMesh textMesh = gameObject.GetComponent<TextMesh>();
+        textMesh.anchor = textAnchor;
+        textMesh.alignment = textAlignment;
+        textMesh.text = "cowabunga";
+        textMesh.fontSize = fontSize;
+        textMesh.color = color;
+        textMesh.GetComponent<MeshRenderer>().sortingOrder = sortingOrder;
+
+        return textMesh;
+
+    }
+
+
+    // [SeralizeField] private GameObject GridCellPrefab;
 
 
 }
