@@ -17,7 +17,7 @@ public class WalkingBehviour : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetMouseButtonDown (0))
+        if(Input.GetMouseButton (0))
         {
             Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
