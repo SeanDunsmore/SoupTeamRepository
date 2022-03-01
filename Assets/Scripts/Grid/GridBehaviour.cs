@@ -6,6 +6,7 @@ public class GridBehaviour
 {
     private int width;
     private int height;
+    private float cellSize;
 
     private int[,] gridArray;
 
@@ -13,23 +14,37 @@ public class GridBehaviour
 
   
    
-    public GridBehaviour(int width, int height)
+    public GridBehaviour(int width, int height, float cellSize)
     {
         this.width = width;
         this.height = height;
+        this.cellSize = cellSize;
 
         gridArray = new int[width, height];
+
+        //hopefully this works
+        GameObject grid = new GameObject("Grid", typeof(TextMesh));
+
         for (int x = 0; x < gridArray.GetLength(0); x++)
         {
             for (int y = 0; y < gridArray.GetLength(1); y++)
             {
 
+                CreateWorldText(grid.transform, gridArray[x, y].ToString(), GetWorldPosition(x, y), 5, Color.white, TextAnchor.MiddleCenter, TextAlignment.Left, 1);
 
-          
+                Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x, y + 1));
+
+
             }
         }
     }
    
+    //Get position
+    private Vector3 GetWorldPosition(int x, int y)
+    {
+        return new Vector3(x, y) * cellSize;
+    }
+
 
     //Create Text
     public static TextMesh CreateWorldText(Transform parent, string text, Vector3 localPosition, int fontSize, Color color, TextAnchor textAnchor, TextAlignment textAlignment, int sortingOrder)

@@ -303,9 +303,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UIBuilderModule.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TextCoreTextEngineModule.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UIElementsInputSystemModule.ref.dll"
-"Assets/Scripts/Grid/CellCreate.cs"
+"Assets/Scripts/Grid/GenerateLevel.cs"
 "Assets/Scripts/Grid/GridBehaviour.cs"
-"Assets/Scripts/Grid/test.cs"
 "Assets/Scripts/Player/CamFollow.cs"
 "Assets/Scripts/Player/WalkingBehviour.cs"
 -langversion:8.0
