@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button text="Button" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 100px; height: 86px; width: 94px; justify-content: flex-start; bottom: 0; align-items: stretch;" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 200px; height: 86px; width: 94px; justify-content: flex-start; bottom: 0;" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 0; height: 86px; width: 94px; justify-content: flex-start; bottom: 0;" />
+</ui:UXML>

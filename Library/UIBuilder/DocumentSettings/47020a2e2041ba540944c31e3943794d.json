@@ -1,0 +1,30 @@
+{
+    "UxmlGuid": "47020a2e2041ba540944c31e3943794d",
+    "UxmlPath": "Assets/NewUXMLTemplate.uxml",
+    "CanvasX": 0,
+    "CanvasY": -41,
+    "CanvasWidth": 803,
+    "CanvasHeight": 571,
+    "MatchGameView": true,
+    "ZoomScale": 1.25,
+    "PanOffset": {
+        "x": 153.96426391601563,
+        "y": 163.65771484375
+    },
+    "ColorModeBackgroundOpacity": 1.0,
+    "ImageModeCanvasBackgroundOpacity": 1.0,
+    "CameraModeCanvasBackgroundOpacity": 1.0,
+    "EnableCanvasBackground": true,
+    "CanvasBackgroundMode": 2,
+    "CanvasBackgroundColor": {
+        "r": 0.8207547068595886,
+        "g": 0.22067460417747498,
+        "b": 0.22067460417747498,
+        "a": 255.0
+    },
+    "CanvasBackgroundImage": {
+        "instanceID": 0
+    },
+    "CanvasBackgroundImageScaleMode": 1,
+    "CanvasBackgroundCameraName": ""
+}
