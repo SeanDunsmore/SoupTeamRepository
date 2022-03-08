@@ -3,13 +3,13 @@
     "UxmlPath": "Assets/NewUXMLTemplate.uxml",
     "CanvasX": 0,
     "CanvasY": -41,
-    "CanvasWidth": 803,
+    "CanvasWidth": 802,
     "CanvasHeight": 571,
     "MatchGameView": true,
-    "ZoomScale": 1.25,
+    "ZoomScale": 1.5,
     "PanOffset": {
-        "x": 153.96426391601563,
-        "y": 163.65771484375
+        "x": -141.4715576171875,
+        "y": -101.65362548828125
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,
