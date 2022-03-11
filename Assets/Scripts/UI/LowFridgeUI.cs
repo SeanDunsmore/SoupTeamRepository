@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class UIcontroller : MonoBehaviour
+public class LowFridgeUI : MonoBehaviour
 {
 
     public GameObject interactMenu;
 
     public Button closeMenu;
 
-    public Button testButton;
+    public Button interactButton;
     public bool isSetup = false;
 
     // Start is called before the first frame update
@@ -45,11 +45,11 @@ public class UIcontroller : MonoBehaviour
 
     }
 
-    void testButtonPressed()
+    void interactButtonPressed()
     {
 
         Debug.Log("testButton Button Pressed");
-   
+        GlobalVariableStore.LevelEnd2 = true;
     }
 
     void setUpButton()
@@ -60,11 +60,11 @@ public class UIcontroller : MonoBehaviour
 
         closeMenu = root.Q<Button>("closeMenu");
 
-        testButton = root.Q<Button>("testButton");
+        interactButton = root.Q<Button>("interact");
 
         closeMenu.clicked += closeMenuPressed;
 
-        testButton.clicked += testButtonPressed;
+        interactButton.clicked += interactButtonPressed;
 
 
         isSetup = true;
