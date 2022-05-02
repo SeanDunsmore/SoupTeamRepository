@@ -57,6 +57,7 @@ public class LevelSelectUI : MonoBehaviour
     void ReturnButtonPressed()
     {
         Debug.Log("Return Button Pressed");
+        SceneManager.LoadScene("Title Screen");
     }
 
     void setUpButton()

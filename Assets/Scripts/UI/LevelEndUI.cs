@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class LevelEndUI : MonoBehaviour
 {
 
     public GameObject interactMenu;
+
+    public Button LevelSelectButton;
 
     public bool isSetup = false;
 
@@ -29,11 +32,21 @@ public class LevelEndUI : MonoBehaviour
 
     }
 
+    void LevelSelectButtonPressed()
+    {
+        Debug.Log("Level Select Button Pressed");
+        SceneManager.LoadScene("Level Select Menu");
+    }
+
     void setUpButton()
     {
 
         
         var root = GetComponent<UIDocument>().rootVisualElement;
+
+        LevelSelectButton = root.Q<Button>("levelSelect");
+
+        LevelSelectButton.clicked += LevelSelectButtonPressed;
 
         isSetup = true;
 

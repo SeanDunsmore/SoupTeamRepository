@@ -10,7 +10,8 @@ public class TitleScreenUI : MonoBehaviour
     public GameObject interactMenu;
 
     public Button LevelSelectButton;
-    
+    public Button ExitButton;
+
 
 
     public bool isSetup = false;
@@ -40,6 +41,12 @@ public class TitleScreenUI : MonoBehaviour
         SceneManager.LoadScene("Level Select Menu");
     }
 
+    void ExitButtonPressed()
+    {
+        Debug.Log("Exit Button Pressed");
+        Application.Quit();
+    }
+
     void setUpButton()
     {
 
@@ -47,9 +54,10 @@ public class TitleScreenUI : MonoBehaviour
         var root = GetComponent<UIDocument>().rootVisualElement;
 
         LevelSelectButton = root.Q<Button>("levelSelect");
-
+        ExitButton = root.Q<Button>("Exit");
 
         LevelSelectButton.clicked += LevelSelectButtonPressed;
+        ExitButton.clicked += ExitButtonPressed;
       
 
         isSetup = true;

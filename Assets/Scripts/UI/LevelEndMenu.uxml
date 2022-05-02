@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="position: absolute; height: 98px; width: 450px; top: 245px; left: 175px; background-color: rgb(191, 217, 214);" />
+    <ui:VisualElement style="position: absolute; height: 188px; width: 450px; top: 245px; left: 177px; background-color: rgb(191, 217, 214);">
+        <ui:Button text="Return to level Select" display-tooltip-when-elided="true" name="levelSelect" style="position: absolute; height: 81px; width: 158px; top: 99px; left: 140px;" />
+    </ui:VisualElement>
     <ui:Label text="Level End" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 271px; left: 343px; width: auto; font-size: 24px; color: rgb(0, 0, 0);" />
-    <ui:Label text="This is the end of the prototype level" display-tooltip-when-elided="true" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px;" />
 </ui:UXML>
