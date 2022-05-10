@@ -9,6 +9,10 @@ public class GlobalVariableStore : MonoBehaviour
     public static bool LevelEnd1;
     public static bool LevelEnd2;
 
+    public static bool TankSet1;
+    public static bool TankSet2;
+    public static bool TankSet3;
+
     public GameObject LevelExit;
 
     public Material Material1;
@@ -19,6 +23,11 @@ public class GlobalVariableStore : MonoBehaviour
     {
         LevelEnd1 = false;
         LevelEnd2 = false;
+
+        TankSet1 = false;
+        TankSet2 = false;
+        TankSet3 = false;
+
 
     }
 
