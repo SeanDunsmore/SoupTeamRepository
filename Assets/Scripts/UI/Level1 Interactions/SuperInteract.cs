@@ -59,6 +59,9 @@ public class SuperInteract : MonoBehaviour
 
         if (GlobalVariableStore.TankSet1 && GlobalVariableStore.TankSet2 && GlobalVariableStore.TankSet3)
         {
+
+            isSetup = false;
+
             interactMenu.SetActive(false);
             interactMenu2.SetActive(true);
 
@@ -80,8 +83,9 @@ public class SuperInteract : MonoBehaviour
         {
             if(GlobalVariableStore.LevelEnd1 && GlobalVariableStore.LevelEnd2)
             {
-
+                Time.timeScale = 1;
                 SceneManager.LoadScene("Level 2");
+
             }
 
         }

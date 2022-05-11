@@ -14,6 +14,7 @@ public class GlobalVariableStore : MonoBehaviour
     public static bool TankSet3;
 
     public GameObject LevelExit;
+    public Light LevelExitLight;
 
     public Material Material1;
     public GameObject LowFridge;
@@ -42,8 +43,8 @@ public class GlobalVariableStore : MonoBehaviour
             if (LevelEnd2)
             {
 
-                LevelExit.SetActive(true);
-
+                LevelExit.GetComponent<MeshRenderer>().material = Material1;
+                LevelExitLight.color = Color.green;
 
             }
 

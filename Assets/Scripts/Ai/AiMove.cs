@@ -49,6 +49,7 @@ public class AiMove : MonoBehaviour
         }
         else if (distance <= stop_distance && WayPoints.Length > 0)
         {
+
             if (cur_timer > 0)
             {
                 cur_timer -= 0.01f;
