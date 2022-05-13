@@ -11,7 +11,7 @@ public class Interact : MonoBehaviour
     Transform player;
 
     bool hasinteracted = false;
-    bool iswindowopen = false;
+    //bool iswindowopen = false;
 
     public GameObject interactMenu;
 
@@ -20,7 +20,7 @@ public class Interact : MonoBehaviour
     public virtual void interact()
     {
         Debug.Log("INTERACT WITH " + transform.name);
-        iswindowopen = true;
+        //iswindowopen = true;
         //// loop until is window open / equals true
         Time.timeScale = 0;
 
@@ -28,23 +28,43 @@ public class Interact : MonoBehaviour
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
 
+        player = GlobalVariableStore.PlayerTrans;
+
+        distance = Vector3.Distance(player.position, transform.position);
+
+        if (!GlobalVariableStore.InteractStateChanged)
+        { 
+            if (distance <= radius)
+            {
+                GlobalVariableStore.Interactdistance = true;
+                GlobalVariableStore.InteractableObject = this;
+                GlobalVariableStore.InteractStateChanged = true;
+
+            }
+            else
+            {
+                GlobalVariableStore.Interactdistance = false;
+            }
+        }
+
+
         if (isFocus && !hasinteracted)
+        {
+
+            if (distance <= radius)
             {
 
-
-
-            distance = Vector3.Distance(player.position, transform.position);
-            if (distance <= radius)
-              {
                   Debug.Log("INTERACT");
                   interact();
                   hasinteracted = true;
-              }
-            
+                  
+
             }
+            
+        }
     }
 
 

@@ -13,6 +13,23 @@ public class GlobalVariableStore : MonoBehaviour
     public static bool TankSet2;
     public static bool TankSet3;
 
+    public static bool TankOpen;
+    public static bool FridgeOpen;
+    public static bool OMOpen;
+
+    public static bool TankCheck1;
+    public static bool TankCheck2;
+    public static bool TankCheck3;
+    public static bool FridgeCheck1;
+    public static bool FridgeCheck2;
+
+
+    public static bool Interactdistance;
+    public GameObject Player;
+    public static Transform PlayerTrans;
+    public static bool InteractStateChanged;
+    public static Interact InteractableObject;
+
     public GameObject LevelExit;
     public Light LevelExitLight;
 
@@ -29,10 +46,24 @@ public class GlobalVariableStore : MonoBehaviour
         TankSet2 = false;
         TankSet3 = false;
 
+        TankOpen = false;
+        FridgeOpen = false;
+        OMOpen = false;
+
+        TankCheck1 = false;
+        TankCheck2 = false;
+        TankCheck3 = false;
+        FridgeCheck1 = false;
+        FridgeCheck2 = false;
+
+
+    Interactdistance = false;
+
+        PlayerTrans = Player.transform;
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
 
         if (LevelEnd1)
@@ -56,6 +87,10 @@ public class GlobalVariableStore : MonoBehaviour
             LowFridge.GetComponent<MeshRenderer>().material = Material1;
         }
 
+
+
+
+        InteractStateChanged = false;
 
             //Debug.Log(LevelEnd);
     }

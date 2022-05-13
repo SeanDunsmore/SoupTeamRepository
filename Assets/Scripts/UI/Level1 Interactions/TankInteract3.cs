@@ -40,10 +40,18 @@ public class TankInteract3 : MonoBehaviour
 
         Debug.Log("Exit Menu Button Pressed");
         Time.timeScale = 1;
-
+        GlobalVariableStore.TankCheck3 = true;
         isSetup = false;
 
         interactMenu.SetActive(false);
+
+        if (GlobalVariableStore.TankCheck1 && GlobalVariableStore.TankCheck2 && GlobalVariableStore.TankCheck3)
+        {
+            GlobalVariableStore.OMOpen = true;
+
+        }
+
+
 
     }
 

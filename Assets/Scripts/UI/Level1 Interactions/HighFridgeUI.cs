@@ -44,6 +44,13 @@ public class HighFridgeUI : MonoBehaviour
 
         interactMenu.SetActive(false);
 
+        GlobalVariableStore.FridgeCheck2 = true;
+        if (GlobalVariableStore.FridgeCheck1 && GlobalVariableStore.FridgeCheck2)
+        {
+            GlobalVariableStore.OMOpen = true;
+
+        }
+
     }
 
     void interactButtonPressed()

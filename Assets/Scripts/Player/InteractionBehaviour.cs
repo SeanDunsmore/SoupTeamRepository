@@ -9,6 +9,8 @@ public class InteractionBehaviour : MonoBehaviour
     // Update is called once per frame
     float distance;
 
+  
+
     public GameObject interactIcon;
 
     //NOTE: since the interaction is based on raycast, it needs a physical body
@@ -41,6 +43,7 @@ public class InteractionBehaviour : MonoBehaviour
                 Interact interact = hit.collider.GetComponent<Interact>();
                 if (interact != null)
                 {
+
                     SetFocus(interact);
                 }
             }

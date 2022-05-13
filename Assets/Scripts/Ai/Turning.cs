@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Turning : MonoBehaviour
 {
-    float Nexttime;
     float modifier;
     //public GameObject Worker;
     bool left = true;
@@ -16,14 +15,9 @@ public class Turning : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Nexttime = 0.0f;
-
 
         startDirection = transform.eulerAngles.y;
 
-        Debug.Log(transform.eulerAngles.y);
-
-       
 
     }
 

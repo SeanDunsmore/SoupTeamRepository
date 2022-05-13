@@ -43,7 +43,15 @@ public class TankInteract1 : MonoBehaviour
 
         isSetup = false;
 
+        GlobalVariableStore.TankCheck1 = true;
+
         interactMenu.SetActive(false);
+        
+        if (GlobalVariableStore.TankCheck1 && GlobalVariableStore.TankCheck2 && GlobalVariableStore.TankCheck3)
+        {
+            GlobalVariableStore.OMOpen = true;
+
+        }
 
     }
 
@@ -72,6 +80,7 @@ public class TankInteract1 : MonoBehaviour
         Debug.Log(GlobalVariableStore.TankSet1);
 
         Pad.GetComponent<MeshRenderer>().material = Material1;
+
 
     }
 

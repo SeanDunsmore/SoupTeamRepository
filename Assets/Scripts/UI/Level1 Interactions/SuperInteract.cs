@@ -69,6 +69,9 @@ public class SuperInteract : MonoBehaviour
             interactpad2.SetActive(true);
             interactpad3.SetActive(true);
 
+            GlobalVariableStore.OMOpen = false;
+            GlobalVariableStore.TankOpen = false;
+            GlobalVariableStore.FridgeOpen = true;
         }
 
 
