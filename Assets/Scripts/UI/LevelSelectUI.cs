@@ -45,13 +45,17 @@ public class LevelSelectUI : MonoBehaviour
     void Level2ButtonPressed()
     {
         Debug.Log("Level 2 Button Pressed");
-        SceneManager.LoadScene("Level 2");
+
+        //Unused
+        //SceneManager.LoadScene("Level 2");
     }
 
     void Level3ButtonPressed()
     {
         Debug.Log("Level 3 Button Pressed");
-        SceneManager.LoadScene("Level 3");
+
+        //Unused
+        //SceneManager.LoadScene("Level 3");
     }
 
     void ReturnButtonPressed()
