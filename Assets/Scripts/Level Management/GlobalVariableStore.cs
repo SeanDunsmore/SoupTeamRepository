@@ -37,6 +37,13 @@ public class GlobalVariableStore : MonoBehaviour
     public GameObject LowFridge;
     public GameObject HighFridge;
 
+    // Level 2
+
+    public static bool SupervisorL21;
+    public static bool SupervisorL22;
+    public static bool SupervisorL23;
+    public static bool SupervisorL24;
+
     void Start()
     {
         LevelEnd1 = false;
@@ -58,6 +65,13 @@ public class GlobalVariableStore : MonoBehaviour
 
 
     Interactdistance = false;
+
+        //Level 2
+        SupervisorL21 = false;
+        SupervisorL22 = false;
+        SupervisorL23 = false;
+        SupervisorL24 = false;
+
 
         PlayerTrans = Player.transform;
 
