@@ -83,6 +83,7 @@ public class OMmenucode3 : MonoBehaviour
 
         TalkButton3 = root.Q<Button>("TalkButton3");
 
+        VisualElement2.visible = false;
 
         TalkButton.clicked += TalkPressed;
 

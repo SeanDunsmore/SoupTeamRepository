@@ -23,6 +23,7 @@ public class GlobalVariableStore : MonoBehaviour
     public static bool FridgeCheck1;
     public static bool FridgeCheck2;
 
+    public int Level;
 
     public static bool Interactdistance;
     public GameObject Player;
@@ -80,28 +81,45 @@ public class GlobalVariableStore : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (LevelEnd1)
+        if(Level == 1)
+        { 
+             if (LevelEnd1)
+             {
+
+                 HighFridge.GetComponent<MeshRenderer>().material = Material1;
+
+                if (LevelEnd2)
+                {
+
+                       LevelExit.GetComponent<MeshRenderer>().material = Material1;
+                      LevelExitLight.color = Color.green;
+
+                }
+
+
+             }
+
+             if (LevelEnd2)
+              {
+                LowFridge.GetComponent<MeshRenderer>().material = Material1;
+              }
+
+        }
+
+        if (Level == 2)
         {
-
-            HighFridge.GetComponent<MeshRenderer>().material = Material1;
-
-            if (LevelEnd2)
+            if (SupervisorL21 && SupervisorL22 && SupervisorL23 && SupervisorL24)
             {
-
                 LevelExit.GetComponent<MeshRenderer>().material = Material1;
                 LevelExitLight.color = Color.green;
-
             }
 
-
         }
 
-        if (LevelEnd2)
+        if (Level == 3)
         {
-            LowFridge.GetComponent<MeshRenderer>().material = Material1;
+
         }
-
-
 
 
         InteractStateChanged = false;
