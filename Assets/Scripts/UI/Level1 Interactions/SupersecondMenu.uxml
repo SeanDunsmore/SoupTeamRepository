@@ -1,9 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="position: absolute; height: 210px; width: 450px; top: 248px; left: 168px; background-color: rgb(191, 217, 214);">
-        <ui:Button text="Check Tank" display-tooltip-when-elided="true" name="CorrectInteract2" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 214px; height: 96px; width: 109px; justify-content: flex-start; bottom: 9px;" />
-        <ui:Button text="Check Tank" display-tooltip-when-elided="true" name="CorrectInteract" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 104px; height: 51px; width: 54px; justify-content: flex-start; bottom: 22px;" />
+    <ui:VisualElement style="position: absolute; height: 304px; width: 752px; top: 154px; left: 168px; background-color: rgb(191, 217, 214);">
+        <ui:Button text="Check Fridge" display-tooltip-when-elided="true" name="CorrectInteract2" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 344px; height: 82px; width: 185px; justify-content: flex-start; bottom: 15px; font-size: 20px; background-color: rgba(27, 135, 36, 255);" />
+        <ui:Button text="Check Fridge" display-tooltip-when-elided="true" name="CorrectInteract" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 148px; height: 81px; width: 184px; justify-content: flex-start; bottom: 16px; font-size: 20px; background-color: rgba(27, 135, 36, 255);" />
     </ui:VisualElement>
-    <ui:Label text="Supervisor Check1" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 264px; left: 319px; width: 186px; font-size: 24px; color: rgb(0, 0, 0);" />
-    <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 509px; height: 86px; width: 94px; justify-content: flex-start; bottom: 5px;" />
-    <ui:Label text="Check if every task is done" display-tooltip-when-elided="true" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px;" />
+    <ui:Label text="Supervisor Check2" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 198px; left: 425px; width: 186px; font-size: 30px; color: rgb(0, 0, 0); -unity-font-style: bold;" />
+    <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 711px; height: 86px; width: 94px; justify-content: flex-start; bottom: 221px; font-size: 20px; background-color: rgba(137, 59, 66, 255);" />
+    <ui:Label text="Check if every task is complete,&#10; if the task is complete then submit the tasks" display-tooltip-when-elided="true" style="position: absolute; top: 257px; left: 340px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center; font-size: 20px;" />
 </ui:UXML>
