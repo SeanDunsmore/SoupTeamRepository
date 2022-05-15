@@ -11,6 +11,9 @@ public class OMinteract : MonoBehaviour
     public Button closeMenu;
     public Button CinteractButton;
 
+    public Label Text;
+    public Label WrongText;
+
     public bool isSetup = false;
 
 
@@ -55,7 +58,7 @@ public class OMinteract : MonoBehaviour
         {
 
             GlobalVariableStore.SupervisorL24 = true;
-
+            GlobalVariableStore.SupervisorCheckL24 = true;
             Time.timeScale = 1;
 
             isSetup = false;
@@ -64,6 +67,29 @@ public class OMinteract : MonoBehaviour
            
 
         }
+        else
+        {
+            WrongText.visible = true;
+            Text.visible = false;
+
+            if (GlobalVariableStore.SupervisorL21 == false)
+            {
+                GlobalVariableStore.SupervisorCheckL21 = false;
+
+            }
+            if (GlobalVariableStore.SupervisorL22 == false)
+            {
+                GlobalVariableStore.SupervisorCheckL22 = false;
+
+            }
+            if (GlobalVariableStore.SupervisorL23 == false)
+            {
+                GlobalVariableStore.SupervisorCheckL23 = false;
+
+            }
+
+        }
+
 
 
     }
@@ -80,7 +106,11 @@ public class OMinteract : MonoBehaviour
 
         CinteractButton = root.Q<Button>("CorrectInteract");
 
-       
+        Text = root.Q<Label>("Text");
+
+        WrongText = root.Q<Label>("WrongText");
+
+        WrongText.visible = false;
 
         closeMenu.clicked += closeMenuPressed;
 

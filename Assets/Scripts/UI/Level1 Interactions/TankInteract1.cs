@@ -43,7 +43,7 @@ public class TankInteract1 : MonoBehaviour
 
         isSetup = false;
 
-        GlobalVariableStore.TankCheck1 = true;
+        
 
         interactMenu.SetActive(false);
         
@@ -59,7 +59,7 @@ public class TankInteract1 : MonoBehaviour
     {
 
         Debug.Log("High Interact Button Pressed");
-
+        GlobalVariableStore.TankCheck1 = true;
 
         GlobalVariableStore.TankSet1 = true;
 
@@ -73,7 +73,7 @@ public class TankInteract1 : MonoBehaviour
     {
 
         Debug.Log("INCInteract Button Pressed");
-
+        GlobalVariableStore.TankCheck1 = true;
 
         GlobalVariableStore.TankSet1 = false;
 

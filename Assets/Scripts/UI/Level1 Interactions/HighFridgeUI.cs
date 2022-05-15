@@ -57,8 +57,8 @@ public class HighFridgeUI : MonoBehaviour
     {
 
         Debug.Log("High Interact Button Pressed");
-       
-        
+
+        GlobalVariableStore.FridgeCheck2 = true;
         GlobalVariableStore.LevelEnd1 = true;
 
         Debug.Log(GlobalVariableStore.LevelEnd1);

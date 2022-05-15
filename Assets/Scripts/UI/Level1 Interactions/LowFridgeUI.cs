@@ -57,6 +57,7 @@ public class LowFridgeUI : MonoBehaviour
     {
 
         Debug.Log("testButton Button Pressed");
+        GlobalVariableStore.FridgeCheck1 = true;
         GlobalVariableStore.LevelEnd2 = true;
     }
 

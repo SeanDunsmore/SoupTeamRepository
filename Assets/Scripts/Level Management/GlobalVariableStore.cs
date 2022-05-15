@@ -13,6 +13,9 @@ public class GlobalVariableStore : MonoBehaviour
     public static bool TankSet2;
     public static bool TankSet3;
 
+
+
+
     public static bool TankOpen;
     public static bool FridgeOpen;
     public static bool OMOpen;
@@ -45,6 +48,11 @@ public class GlobalVariableStore : MonoBehaviour
     public static bool SupervisorL23;
     public static bool SupervisorL24;
 
+    public static bool SupervisorCheckL21;
+    public static bool SupervisorCheckL22;
+    public static bool SupervisorCheckL23;
+    public static bool SupervisorCheckL24;
+
     void Start()
     {
         LevelEnd1 = false;
@@ -56,7 +64,7 @@ public class GlobalVariableStore : MonoBehaviour
 
         TankOpen = false;
         FridgeOpen = false;
-        OMOpen = false;
+        OMOpen = true;
 
         TankCheck1 = false;
         TankCheck2 = false;
@@ -72,6 +80,11 @@ public class GlobalVariableStore : MonoBehaviour
         SupervisorL22 = false;
         SupervisorL23 = false;
         SupervisorL24 = false;
+
+        SupervisorCheckL21 = false;
+        SupervisorCheckL22 = false;
+        SupervisorCheckL23 = false;
+        SupervisorCheckL24 = false;
 
 
         PlayerTrans = Player.transform;

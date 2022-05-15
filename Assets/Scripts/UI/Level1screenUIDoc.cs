@@ -71,6 +71,51 @@ public class Level1screenUIDoc : MonoBehaviour
             Tank3.visible = false;
         }
 
+        if(GlobalVariableStore.TankCheck1)
+        {
+            Tank1.value = true;
+        }
+        else
+        {
+            Tank1.value = false;
+        }
+        if (GlobalVariableStore.TankCheck2)
+        {
+            Tank2.value = true;
+        }
+        else
+        {
+            Tank2.value = false;
+        }
+        if (GlobalVariableStore.TankCheck3)
+        {
+            Tank3.value = true;
+        }
+        else
+        {
+            Tank3.value = false;
+        }
+
+
+        if (GlobalVariableStore.FridgeCheck1)
+        {
+            Fridge1.value = true;
+        }
+        else
+        {
+            Fridge1.value = false;
+        }
+        if (GlobalVariableStore.FridgeCheck2)
+        {
+            Fridge2.value = true;
+        }
+        else
+        {
+            Fridge2.value = false;
+        }
+
+
+
         if (GlobalVariableStore.FridgeOpen)
         {
             Fridge1.visible = true;

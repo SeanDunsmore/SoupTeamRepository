@@ -13,8 +13,9 @@ public class SuperInteract : MonoBehaviour
     public GameObject interactpad1;
     public GameObject interactpad2;
     public GameObject interactpad3;
-  
 
+    public Label Text;
+    public Label WrongText;
     public Button CinteractButton;
     public Button CinteractButton2;
     public bool isSetup = false;
@@ -23,9 +24,9 @@ public class SuperInteract : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+       
         setUpButton();
-
+       
     }
 
     // Update is called once per frame
@@ -73,6 +74,22 @@ public class SuperInteract : MonoBehaviour
             GlobalVariableStore.TankOpen = false;
             GlobalVariableStore.FridgeOpen = true;
         }
+        else{
+
+
+            WrongText.visible = true;
+            Text.visible = false;
+            GlobalVariableStore.TankCheck1 = false;
+            GlobalVariableStore.TankCheck2 = false;
+            GlobalVariableStore.TankCheck3 = false;
+            GlobalVariableStore.TankSet1 = false;
+            GlobalVariableStore.TankSet2 = false;
+            GlobalVariableStore.TankSet3 = false;
+
+
+        }
+
+
 
 
     }
@@ -91,6 +108,8 @@ public class SuperInteract : MonoBehaviour
 
             }
 
+
+
         }
 
     }
@@ -106,6 +125,12 @@ public class SuperInteract : MonoBehaviour
         CinteractButton = root.Q<Button>("CorrectInteract");
 
         CinteractButton2 = root.Q<Button>("CorrectInteract2");
+
+        Text = root.Q<Label>("Text1");
+
+        WrongText = root.Q<Label>("Text2");
+
+        WrongText.visible = false;
 
         closeMenu.clicked += closeMenuPressed;
 

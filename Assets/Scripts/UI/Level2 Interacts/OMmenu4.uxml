@@ -4,5 +4,6 @@
     </ui:VisualElement>
     <ui:Label text="Supervisor Check1" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 264px; left: 319px; width: 186px; font-size: 24px; color: rgb(0, 0, 0);" />
     <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 509px; height: 86px; width: 94px; justify-content: flex-start; bottom: 5px;" />
-    <ui:Label text="Check if all has been talked to" display-tooltip-when-elided="true" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px;" />
+    <ui:Label text="Check if all has been talked to" display-tooltip-when-elided="true" name="Text" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px;" />
+    <ui:Label text="Incorrect, check " display-tooltip-when-elided="true" name="WrongText" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px;" />
 </ui:UXML>

@@ -47,6 +47,8 @@ public class OMmenucode : MonoBehaviour
     void TalkPressed2()
     {
         GlobalVariableStore.SupervisorL21 = true;
+        GlobalVariableStore.SupervisorCheckL21 = true;
+
         Time.timeScale = 1;
 
         isSetup = false;
@@ -58,7 +60,7 @@ public class OMmenucode : MonoBehaviour
     void TalkPressed3()
     {
         Time.timeScale = 1;
-
+        GlobalVariableStore.SupervisorCheckL21 = true;
         isSetup = false;
 
         interactMenu.SetActive(false);

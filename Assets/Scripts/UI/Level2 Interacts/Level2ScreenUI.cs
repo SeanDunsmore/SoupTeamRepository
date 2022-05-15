@@ -71,6 +71,44 @@ public class Level2ScreenUI : MonoBehaviour
 
 
 
+        if (GlobalVariableStore.SupervisorL21)
+        {
+            Supervisor1.value = true;
+        }
+        else
+        {
+            Supervisor1.value = false;
+        }
+        if (GlobalVariableStore.SupervisorL22)
+        {
+            Supervisor2.value = true;
+        }
+        else
+        {
+            Supervisor2.value = false;
+        }
+        if (GlobalVariableStore.SupervisorL23)
+        {
+            Supervisor3.value = true;
+        }
+        else
+        {
+            Supervisor3.value = false;
+        }
+
+
+        if (GlobalVariableStore.SupervisorL24)
+        {
+            Pete.value = true;
+        }
+        else
+        {
+            Pete.value = false;
+        }
+
+
+
+
         //GlobalVariableStore.InteractableObject.OnFocused(GlobalVariableStore.PlayerTrans);
 
 
