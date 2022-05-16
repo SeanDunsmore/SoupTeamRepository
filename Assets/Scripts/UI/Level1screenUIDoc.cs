@@ -21,9 +21,14 @@ public class Level1screenUIDoc : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+      
+        
         setUpButton();
-
-
+        //Tank1.visible = false;
+       // Tank2.visible = false;
+       // Tank3.visible = false;
+       // Fridge1.visible = false;
+       // Fridge2.visible = false;
     }
 
     // Update is called once per frame
@@ -63,12 +68,15 @@ public class Level1screenUIDoc : MonoBehaviour
             Tank1.visible = true;
             Tank2.visible = true;
             Tank3.visible = true;
+            Tank1.SetEnabled(true);
+            Tank2.SetEnabled(true);
+            Tank3.SetEnabled(true);
         }
         else
         {
-            Tank1.visible = false;
-            Tank2.visible = false;
-            Tank3.visible = false;
+            Tank1.SetEnabled(false);
+            Tank2.SetEnabled(false);
+            Tank3.SetEnabled(false);
         }
 
         if(GlobalVariableStore.TankCheck1)
@@ -120,20 +128,24 @@ public class Level1screenUIDoc : MonoBehaviour
         {
             Fridge1.visible = true;
             Fridge2.visible = true;
+            Fridge1.SetEnabled(true);
+            Fridge2.SetEnabled(true);
         }
         else
         {
-            Fridge1.visible = false;
-            Fridge2.visible = false;
+            Fridge1.SetEnabled(false);
+            Fridge2.SetEnabled(false);
         }
 
         if (GlobalVariableStore.OMOpen)
         {
             Pete.visible = true;
+            Pete.SetEnabled(true);
         }
         else
         {
-            Pete.visible = false;
+           // Pete.visible = false;
+            Pete.SetEnabled(false);
         }
 
 

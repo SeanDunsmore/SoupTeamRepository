@@ -66,7 +66,7 @@ public class Level2ScreenUI : MonoBehaviour
         }
         else
         {
-            Pete.visible = false;
+            Pete.SetEnabled(false); 
         }
 
 
