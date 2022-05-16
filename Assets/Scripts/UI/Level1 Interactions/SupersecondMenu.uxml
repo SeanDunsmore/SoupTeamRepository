@@ -7,6 +7,6 @@
         <ui:VisualElement name="PeteGlad" style="background-image: url(&apos;/Assets/Materials/UI Assets/Pete_Happy.png&apos;); height: 336px; -unity-slice-right: 0; right: 1px; position: absolute; left: 465px;" />
         <ui:VisualElement name="PeteSad" style="background-image: url(&apos;/Assets/Materials/UI Assets/Pete_Sad.png&apos;); height: 336px; -unity-slice-right: 0; right: 1px; position: absolute; left: 465px;" />
         <ui:Label text="That’s great we&apos;ll upgrade to more efficient equipment,&#10; the next thing I need you to inspect is the refrigeration system" display-tooltip-when-elided="true" name="Text1" style="position: absolute; top: 80px; left: 30px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center; font-size: 20px; white-space: normal;" />
-        <ui:Label text="Did yhou actually check them?" display-tooltip-when-elided="true" name="Text2" style="position: absolute; top: 80px; left: 30px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center; font-size: 20px; white-space: normal;" />
+        <ui:Label text="Did you actually check them?" display-tooltip-when-elided="true" name="Text2" style="position: absolute; top: 80px; left: 30px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center; font-size: 20px; white-space: normal;" />
     </ui:VisualElement>
 </ui:UXML>
