@@ -37,16 +37,20 @@ public class PauseMenu : MonoBehaviour
 
     void LevelSelectButtonPressed()
     {
-        Debug.Log("Level Select Button Pressed");
+        Debug.Log("Return to Level Select Button Pressed");
         GlobalVariableStore.IsPaused = false;
         Time.timeScale = 1;
+        isSetup = false;
+        SceneManager.LoadScene("Level Select Menu");
 
     }
 
     void ExitButtonPressed()
     {
-        Debug.Log("Exit Button Pressed");
-        Application.Quit();
+        Debug.Log("Level Resume Pressed");
+        isSetup = false;
+        GlobalVariableStore.IsPaused = false;
+        Time.timeScale = 1;
     }
 
     void setUpButton()
