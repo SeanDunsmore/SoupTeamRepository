@@ -39,6 +39,7 @@ public class LevelSelectUI : MonoBehaviour
     void Level1ButtonPressed()
     {
         Debug.Log("Level 1 Button Pressed");
+        GlobalVariableStore.Level = 1;
         SceneManager.LoadScene("Level 1");
     }
 

@@ -21,6 +21,8 @@ public class Level2ScreenUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        GlobalVariableStore.Level = 2;
         setUpButton();
 
 

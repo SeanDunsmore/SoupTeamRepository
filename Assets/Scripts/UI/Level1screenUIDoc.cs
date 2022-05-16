@@ -22,8 +22,8 @@ public class Level1screenUIDoc : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
-        
+
+        GlobalVariableStore.Level = 1;
         setUpButton();
         //Tank1.visible = false;
        // Tank2.visible = false;

@@ -15,7 +15,10 @@ public class StartBlurb : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
+       
         setUpButton();
+
+
     }
 
     // Update is called once per frame

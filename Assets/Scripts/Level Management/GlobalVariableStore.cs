@@ -31,7 +31,7 @@ public class GlobalVariableStore : MonoBehaviour
 
     public static bool Menu2Check;
 
-    public int Level;
+    public static int Level;
 
     public static bool Interactdistance;
     public GameObject Player;

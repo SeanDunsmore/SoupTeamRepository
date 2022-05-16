@@ -111,7 +111,7 @@ public class SuperInteract : MonoBehaviour
             if (GlobalVariableStore.LevelEnd1 && GlobalVariableStore.LevelEnd2)
             {
                 Time.timeScale = 1;
-                SceneManager.LoadScene("Level 2");
+                SceneManager.LoadScene("Load");
 
             }
             else
