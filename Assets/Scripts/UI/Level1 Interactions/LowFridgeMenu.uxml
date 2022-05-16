@@ -1,7 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="position: absolute; height: 210px; width: 450px; top: 246px; left: 175px; background-color: rgb(191, 217, 214);" />
-    <ui:Label text="Low Quality Fridge" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 262px; left: 293px; width: auto; font-size: 24px; color: rgb(0, 0, 0);" />
-    <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 498px; height: 86px; width: 94px; justify-content: flex-start; bottom: 127px;" />
-    <ui:Button text="automated switch-off for&#10; lights in refridgerator" display-tooltip-when-elided="true" name="interact" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 301px; height: 86px; width: 174px; justify-content: flex-start; bottom: 128px;" />
-    <ui:Label text="This fridge is using too much energy, interact to suggest replacing it &#10;with a more efficent unit because it is annually 25,000 kWh" display-tooltip-when-elided="true" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center;" />
+    <ui:VisualElement style="position: absolute; height: 185px; width: 547px; top: 30%; left: 30%; background-color: rgb(191, 217, 214);">
+        <ui:Label text="Low Quality Fridge" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 6px; left: 166px; width: auto; font-size: 24px; color: rgb(0, 0, 0);" />
+        <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 377px; height: 86px; width: 94px; justify-content: flex-start; bottom: 13px; background-color: rgba(137, 59, 66, 255);" />
+        <ui:Button text="automated switch-off for lights in refridgerator" display-tooltip-when-elided="true" name="interact" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 47px; height: 86px; width: 313px; justify-content: flex-start; bottom: 11px; background-color: rgba(27, 135, 36, 255);" />
+        <ui:Label text="This fridge is using too much energy, interact to suggest replacing it &#10;with a more efficent unit because it is annually 25,000 kWh" display-tooltip-when-elided="true" style="position: absolute; top: 44px; left: 48px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center;" />
+    </ui:VisualElement>
 </ui:UXML>
