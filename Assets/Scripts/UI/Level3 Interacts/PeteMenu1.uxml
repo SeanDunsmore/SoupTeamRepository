@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="VisualElement1" style="position: absolute; height: 210px; width: 450px; top: 238px; left: 177px; background-color: rgb(191, 217, 214);">
+        <ui:Button text="Talk" display-tooltip-when-elided="true" name="TalkButton" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 69px; height: 96px; width: 109px; justify-content: flex-start; bottom: 7px;" />
+        <ui:Label text="Supervisor1 Talk" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 16px; left: 126px; width: 186px; font-size: 24px; color: rgb(0, 0, 0);" />
+        <ui:Label text="Talk to supervisor" display-tooltip-when-elided="true" style="position: absolute; top: 77px; left: 17px; color: rgb(0, 0, 0); width: 440px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="VisualElement2" style="position: absolute; height: 210px; width: 450px; top: 237px; left: 177px; background-color: rgb(191, 217, 214);">
+        <ui:Button text="Forklift Check" display-tooltip-when-elided="true" name="TalkButton2" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 10px; height: 78px; width: 89px; justify-content: flex-start; bottom: 7px;" />
+        <ui:Label text="Supervisor1 Talk" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 16px; left: 126px; width: 186px; font-size: 24px; color: rgb(0, 0, 0);" />
+        <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 280px; height: 86px; width: 94px; justify-content: flex-start; bottom: 11px;" />
+        <ui:Label text="Talk to supervisor" display-tooltip-when-elided="true" name="Text1" style="position: absolute; top: 77px; left: 17px; color: rgb(0, 0, 0); width: 440px;" />
+        <ui:Button text="Generator Check" display-tooltip-when-elided="true" name="TalkButton3" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 110px; height: 78px; width: 89px; justify-content: flex-start; bottom: 8px;" />
+        <ui:Label text="Forklift wrong text" display-tooltip-when-elided="true" name="Text2" style="position: absolute; top: 77px; left: 17px; color: rgb(0, 0, 0); width: 440px;" />
+        <ui:Label text="Generator Check Wrong" display-tooltip-when-elided="true" name="Text3" style="position: absolute; top: 77px; left: 17px; color: rgb(0, 0, 0); width: 440px;" />
+        <ui:Label text="Forklift Check right" display-tooltip-when-elided="true" name="Text4" style="position: absolute; top: 78px; left: 18px; color: rgb(0, 0, 0); width: 440px;" />
+        <ui:Label text="Generator check right" display-tooltip-when-elided="true" name="Text5" style="position: absolute; top: 80px; left: 14px; color: rgb(0, 0, 0); width: 440px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="VisualElement3" style="position: absolute; height: 210px; width: 450px; top: 237px; left: 177px; background-color: rgb(191, 217, 214);">
+        <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu2" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 158px; height: 86px; width: 94px; justify-content: flex-start; bottom: 8px;" />
+        <ui:Label text="Move to supervisors" display-tooltip-when-elided="true" name="EndText" style="position: absolute; top: 80px; left: 14px; color: rgb(0, 0, 0); width: 440px;" />
+    </ui:VisualElement>
+</ui:UXML>

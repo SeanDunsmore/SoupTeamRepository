@@ -59,6 +59,34 @@ public class GlobalVariableStore : MonoBehaviour
     public static bool SupervisorCheckL23;
     public static bool SupervisorCheckL24;
 
+
+    // level 3
+
+    public static bool Forklift1;
+    public static bool Forklift2;
+    public static bool Generator1;
+    public static bool Generator2;
+
+    public static bool ForkliftCheck1;
+    public static bool ForkliftCheck2;
+    public static bool GeneratorCheck1;
+    public static bool GeneratorCheck2;
+
+    public static bool SupervisorL31;
+    public static bool SupervisorL32;
+    public static bool SupervisorL33;
+    public static bool SupervisorL34;
+
+    public static bool SupervisorCheckL31;
+    public static bool SupervisorCheckL32;
+    public static bool SupervisorCheckL33;
+    public static bool SupervisorCheckL34;
+
+    public static bool GenOpen;
+    public static bool ForkOpen;
+    public static bool OML3Open;
+    public static bool exitOpen;
+
     void Start()
     {
 
@@ -96,6 +124,34 @@ public class GlobalVariableStore : MonoBehaviour
         SupervisorCheckL22 = false;
         SupervisorCheckL23 = false;
         SupervisorCheckL24 = false;
+
+        // Level 3
+
+
+        Forklift1 = false;
+        Forklift2 = false;
+        Generator1 = false;
+        Generator2 = false;
+
+        ForkliftCheck1 = false;
+        ForkliftCheck2 = false;
+        GeneratorCheck1 = false;
+        GeneratorCheck2 = false;
+
+        SupervisorL31 = false;
+        SupervisorL32 = false;
+        SupervisorL33 = false;
+        SupervisorL34 = false;
+
+        SupervisorCheckL31 = false;
+        SupervisorCheckL32 = false;
+        SupervisorCheckL33 = false;
+        SupervisorCheckL34 = false;
+
+        GenOpen = false;
+        ForkOpen = false;
+        OML3Open = false;
+        exitOpen = false;
 
 
         PlayerTrans = Player.transform;

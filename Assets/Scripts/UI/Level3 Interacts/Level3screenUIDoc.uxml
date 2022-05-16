@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:IMGUIContainer name="UNMagnify" style="position: absolute; background-image: url(&apos;/Assets/Materials/UI Assets/Magnifying Glass.png&apos;); height: 107px; width: 109px; top: auto; left: 2px; bottom: 4px; opacity: 0.5; background-color: rgba(0, 0, 0, 0);" />
+    <ui:Button display-tooltip-when-elided="true" name="Magnify" style="height: 110px; background-image: url(&apos;/Assets/Materials/UI Assets/Magnifying Glass.png&apos;); position: absolute; top: auto; left: 0; width: 109px; bottom: 1px; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(56, 56, 56, 0); border-right-color: rgba(56, 56, 56, 0); border-top-color: rgba(56, 56, 56, 0); border-bottom-color: rgba(56, 56, 56, 0);" />
+    <ui:Button display-tooltip-when-elided="true" name="TasKList" style="height: 183px; background-image: url(&apos;/Assets/Materials/UI Assets/Menu Background.png&apos;); position: absolute; top: 0; left: auto; width: 185px; bottom: auto; background-color: rgb(0, 0, 0); border-left-color: rgba(56, 56, 56, 0); border-right-color: rgba(56, 56, 56, 0); border-top-color: rgba(56, 56, 56, 0); border-bottom-color: rgba(56, 56, 56, 0); right: 3px;">
+        <ui:Foldout text="Tasks" value="true" style="height: 21px; position: absolute; top: 10px; left: auto; cursor: initial; right: 75px; justify-content: flex-start; align-items: center; width: 51px;">
+            <ui:Toggle label="Speak with Pete" name="Pete" focusable="true" value="false" style="height: 17px; position: relative; flex-direction: row; flex-wrap: nowrap;" />
+            <ui:Toggle label="Check first Generator" name="Generator1" style="height: 14px; position: relative; flex-wrap: nowrap;" />
+            <ui:Toggle label="Check second Generator" name="Generator2" style="height: 14px; position: relative; flex-wrap: nowrap; width: 161px;" />
+            <ui:Toggle label="Check first forklift" name="Forklift1" style="height: 14px; position: relative; flex-wrap: nowrap;" />
+            <ui:Toggle label="Check second Forkllift" name="Forklift2" focusable="true" style="height: 14px; flex-wrap: nowrap;" />
+            <ui:Toggle label="Check first supervisor" name="Supervisor3" style="height: 15px; flex-wrap: nowrap;" />
+            <ui:Toggle label="Exit" name="Exit" style="height: 15px; flex-wrap: nowrap;" />
+        </ui:Foldout>
+    </ui:Button>
+    <ui:Button display-tooltip-when-elided="true" name="PauseButton" style="position: absolute; height: 99px; width: 105px; left: 1px; top: 1px; background-image: url(&apos;/Assets/Materials/UI Assets/Pause icon.png&apos;); background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0);" />
+</ui:UXML>
