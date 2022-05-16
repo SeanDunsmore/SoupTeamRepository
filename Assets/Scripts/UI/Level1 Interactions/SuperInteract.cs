@@ -16,6 +16,9 @@ public class SuperInteract : MonoBehaviour
 
     public Label Text;
     public Label WrongText;
+    public VisualElement PeteGlad;
+    public VisualElement PeteSad;
+
     public Button CinteractButton;
     public Button CinteractButton2;
     public bool isSetup = false;
@@ -65,6 +68,8 @@ public class SuperInteract : MonoBehaviour
 
             interactMenu.SetActive(false);
             interactMenu2.SetActive(true);
+            GlobalVariableStore.Menu2Check = true;
+
 
             interactpad1.SetActive(true);
             interactpad2.SetActive(true);
@@ -79,6 +84,8 @@ public class SuperInteract : MonoBehaviour
 
             WrongText.visible = true;
             Text.visible = false;
+            PeteSad.visible = true;
+            PeteGlad.visible = false;
             GlobalVariableStore.TankCheck1 = false;
             GlobalVariableStore.TankCheck2 = false;
             GlobalVariableStore.TankCheck3 = false;
@@ -101,22 +108,34 @@ public class SuperInteract : MonoBehaviour
 
         if (GlobalVariableStore.TankSet1 && GlobalVariableStore.TankSet2 && GlobalVariableStore.TankSet3)
         {
-            if(GlobalVariableStore.LevelEnd1 && GlobalVariableStore.LevelEnd2)
+            if (GlobalVariableStore.LevelEnd1 && GlobalVariableStore.LevelEnd2)
             {
                 Time.timeScale = 1;
                 SceneManager.LoadScene("Level 2");
 
             }
+            else
+            {
+                WrongText.visible = true;
+                Text.visible = false;
+                PeteSad.visible = true;
+                PeteGlad.visible = false;
+            }
 
 
-
-        }
+            }
 
     }
 
         void setUpButton()
          {
 
+        if (GlobalVariableStore.Menu2Check)
+        {
+            interactMenu.SetActive(false);
+            interactMenu2.SetActive(true);
+
+        }
 
         var root = GetComponent<UIDocument>().rootVisualElement;
 
@@ -130,7 +149,14 @@ public class SuperInteract : MonoBehaviour
 
         WrongText = root.Q<Label>("Text2");
 
+        PeteGlad = root.Q<VisualElement>("PeteGlad");
+
+        PeteSad = root.Q<VisualElement>("PeteSad");
+
         WrongText.visible = false;
+
+        PeteSad.visible = false;
+
 
         closeMenu.clicked += closeMenuPressed;
 

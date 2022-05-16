@@ -6,6 +6,9 @@ using UnityEngine;
 public class GlobalVariableStore : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public static bool IsPaused;
+
     public static bool LevelEnd1;
     public static bool LevelEnd2;
 
@@ -26,10 +29,13 @@ public class GlobalVariableStore : MonoBehaviour
     public static bool FridgeCheck1;
     public static bool FridgeCheck2;
 
+    public static bool Menu2Check;
+
     public int Level;
 
     public static bool Interactdistance;
     public GameObject Player;
+    public GameObject PauseMenu;
     public static Transform PlayerTrans;
     public static bool InteractStateChanged;
     public static Interact InteractableObject;
@@ -55,6 +61,10 @@ public class GlobalVariableStore : MonoBehaviour
 
     void Start()
     {
+
+        IsPaused = false;
+        PauseMenu.SetActive(false);
+
         LevelEnd1 = false;
         LevelEnd2 = false;
 
@@ -72,8 +82,9 @@ public class GlobalVariableStore : MonoBehaviour
         FridgeCheck1 = false;
         FridgeCheck2 = false;
 
+        Menu2Check = false;
 
-    Interactdistance = false;
+        Interactdistance = false;
 
         //Level 2
         SupervisorL21 = false;
@@ -91,7 +102,7 @@ public class GlobalVariableStore : MonoBehaviour
 
     }
 
-    void FixedUpdate()
+    void Update()
     {
 
         if(Level == 1)
@@ -132,6 +143,18 @@ public class GlobalVariableStore : MonoBehaviour
         if (Level == 3)
         {
 
+        }
+
+
+        if (IsPaused)
+        {
+            PauseMenu.SetActive(true);
+            Time.timeScale = 0;
+
+        }
+        else
+        {
+            PauseMenu.SetActive(false);
         }
 
 

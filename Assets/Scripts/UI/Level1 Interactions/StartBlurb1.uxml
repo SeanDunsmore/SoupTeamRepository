@@ -1,7 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="position: absolute; height: 210px; width: 450px; top: 238px; left: 177px; background-color: rgb(191, 217, 214);">
-        <ui:Button text="Exit" display-tooltip-when-elided="true" name="ExitInteract" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 99px; height: 96px; width: 109px; justify-content: flex-start; bottom: 6px;" />
+    <ui:VisualElement style="position: absolute; height: 334px; width: 766px; top: 120px; left: 25%; background-color: rgb(191, 217, 214);">
+        <ui:Label text="Welcome to Energy Champion!" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 24px; left: 57px; width: 354px; font-size: 24px; color: rgb(0, 0, 0);" />
+        <ui:Label text="Ben write something here ya numpty" display-tooltip-when-elided="true" style="position: absolute; top: 75px; left: 31px; color: rgb(0, 0, 0); width: 408px; height: 151px; font-size: 20px; -unity-text-align: upper-center; white-space: normal;" />
+        <ui:Button text="Begin!" display-tooltip-when-elided="true" name="ExitInteract" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 146px; height: 96px; width: 173px; justify-content: flex-start; bottom: 35px; background-color: rgb(26, 135, 36); font-size: 20px;" />
+        <ui:VisualElement style="background-image: url(&apos;/Assets/Materials/UI Assets/Pete_Happy.png&apos;); height: 336px; -unity-slice-right: 0; right: 1px; position: absolute; left: 465px;" />
     </ui:VisualElement>
-    <ui:Label text="Start Level" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 264px; left: 319px; width: 186px; font-size: 24px; color: rgb(0, 0, 0);" />
-    <ui:Label text="Start" display-tooltip-when-elided="true" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px;" />
 </ui:UXML>

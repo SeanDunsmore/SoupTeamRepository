@@ -21175,6 +21175,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c9ee4554f4401034496bde52739a514f, type: 3}
   m_PrefabInstance: {fileID: 1429523448}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1434057922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1434057923}
+  - component: {fileID: 1434057925}
+  - component: {fileID: 1434057924}
+  m_Layer: 0
+  m_Name: PauseMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1434057923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434057922}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.30762, y: 0, z: -23.717701}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4235550214178928613}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1434057924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434057922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f9e830dc54fa54db53f3b522403882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactMenu: {fileID: 1434057922}
+  isSetup: 0
+--- !u!114 &1434057925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434057922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21c074d86024caca2a0034ce4f53f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 9f672244da5cb2643aad4c7a0122606b, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 562920499f5cc0f4b8012de1538e2614, type: 3}
+  m_SortingOrder: 0
 --- !u!1 &1434225364
 GameObject:
   m_ObjectHideFlags: 0
@@ -31336,6 +31398,10 @@ PrefabInstance:
       propertyPath: LowFridge
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4235550215491430532, guid: 72a623f4aa059bf4fb5c445d0818a935, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 1434057922}
     - target: {fileID: 4235550215491430532, guid: 72a623f4aa059bf4fb5c445d0818a935, type: 3}
       propertyPath: HighFridge
       value: 
