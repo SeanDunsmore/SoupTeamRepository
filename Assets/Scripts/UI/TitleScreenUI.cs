@@ -11,6 +11,7 @@ public class TitleScreenUI : MonoBehaviour
 
     public Button LevelSelectButton;
     public Button ExitButton;
+    public Button CreditsButton;
 
 
 
@@ -47,6 +48,13 @@ public class TitleScreenUI : MonoBehaviour
         Application.Quit();
     }
 
+    void CreditsButtonPressed()
+    {
+        Debug.Log("Credits Button Pressed");
+        
+    }
+
+
     void setUpButton()
     {
 
@@ -55,10 +63,12 @@ public class TitleScreenUI : MonoBehaviour
 
         LevelSelectButton = root.Q<Button>("levelSelect");
         ExitButton = root.Q<Button>("Exit");
+        CreditsButton = root.Q<Button>("Credits");
 
         LevelSelectButton.clicked += LevelSelectButtonPressed;
         ExitButton.clicked += ExitButtonPressed;
-      
+        CreditsButton.clicked += CreditsButtonPressed;
+
 
         isSetup = true;
 
