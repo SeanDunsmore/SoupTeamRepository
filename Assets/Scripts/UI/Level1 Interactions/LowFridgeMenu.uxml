@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="position: absolute; height: 210px; width: 450px; top: 245px; left: 175px; background-color: rgb(191, 217, 214);" />
+    <ui:VisualElement style="position: absolute; height: 210px; width: 450px; top: 246px; left: 175px; background-color: rgb(191, 217, 214);" />
     <ui:Label text="Low Quality Fridge" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 262px; left: 293px; width: auto; font-size: 24px; color: rgb(0, 0, 0);" />
     <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 498px; height: 86px; width: 94px; justify-content: flex-start; bottom: 127px;" />
-    <ui:Button text="Interact" display-tooltip-when-elided="true" name="interact" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 301px; height: 86px; width: 94px; justify-content: flex-start; bottom: 128px;" />
-    <ui:Label text="Interact with both fridges to show the level end point" display-tooltip-when-elided="true" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px;" />
+    <ui:Button text="automated switch-off for&#10; lights in refridgerator" display-tooltip-when-elided="true" name="interact" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 301px; height: 86px; width: 174px; justify-content: flex-start; bottom: 128px;" />
+    <ui:Label text="This fridge is using too much energy, interact to suggest replacing it &#10;with a more efficent unit because it is annually 25,000 kWh" display-tooltip-when-elided="true" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center;" />
 </ui:UXML>
