@@ -22060,20 +22060,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f1fb107503da67645a317e4c190a6f9b, type: 3}
   m_PrefabInstance: {fileID: 1464625642}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1464625645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464625643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4f754e819288d84d8362dadf9b3ff09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 3
-  interactMenu: {fileID: 884433401}
 --- !u!208 &1464625646
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -22350,20 +22336,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f1fb107503da67645a317e4c190a6f9b, type: 3}
   m_PrefabInstance: {fileID: 1511713440}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1511713443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511713441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4f754e819288d84d8362dadf9b3ff09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 3
-  interactMenu: {fileID: 1518266987}
 --- !u!208 &1511713444
 NavMeshObstacle:
   m_ObjectHideFlags: 0
