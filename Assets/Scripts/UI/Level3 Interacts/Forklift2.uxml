@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement style="position: absolute; height: 208px; width: 572px; top: 30%; left: 30%; background-color: rgb(191, 217, 214); display: flex;">
-        <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 352px; height: 86px; width: 94px; justify-content: flex-start; bottom: 7px; background-color: rgb(137, 59, 66);" />
-        <ui:Button text="Interact" display-tooltip-when-elided="true" name="interact" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 112px; height: 86px; width: 230px; justify-content: flex-start; bottom: 6px; background-color: rgb(27, 135, 36);" />
-        <ui:Label text="Flavor Text Here" display-tooltip-when-elided="true" style="position: absolute; top: 47px; left: 72px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center;" />
-        <ui:Label text="Forklift  2" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 5px; left: 239px; width: auto; font-size: 24px; color: rgb(0, 0, 0); -unity-font-style: bold;" />
+        <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 352px; height: 86px; width: 94px; justify-content: flex-start; bottom: 7px; background-color: rgb(137, 59, 66); font-size: 16px;" />
+        <ui:Button text="Recommend&#10;Electric Forklift" display-tooltip-when-elided="true" name="interact" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 112px; height: 86px; width: 230px; justify-content: flex-start; bottom: 6px; background-color: rgb(27, 135, 36); font-size: 16px;" />
+        <ui:Label text="These old forklifts give off large amounts of CO2 emissions &#10;and are not very effcient compared to new electric models&#10;" display-tooltip-when-elided="true" style="position: absolute; top: 53px; left: 72px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center; font-size: 16px;" />
+        <ui:Label text="Forklift  2" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 10px; left: 239px; width: auto; font-size: 24px; color: rgb(0, 0, 0); -unity-font-style: bold;" />
     </ui:VisualElement>
 </ui:UXML>
