@@ -8,7 +8,7 @@
             <ui:Toggle label="Check second Generator" name="Generator2" style="height: 14px; position: relative; flex-wrap: nowrap; width: 218px;" />
             <ui:Toggle label="Check first forklift" name="Forklift1" style="height: 14px; position: relative; flex-wrap: nowrap;" />
             <ui:Toggle label="Check second Forkllift" name="Forklift2" focusable="true" style="height: 14px; flex-wrap: nowrap;" />
-            <ui:Toggle label="Check first supervisor" name="Supervisor3" style="height: 15px; flex-wrap: nowrap;" />
+            <ui:Toggle label="Check supervisor" name="Supervisor3" style="height: 15px; flex-wrap: nowrap;" />
             <ui:Toggle label="Exit" name="Exit" style="height: 15px; flex-wrap: nowrap;" />
         </ui:Foldout>
     </ui:Button>

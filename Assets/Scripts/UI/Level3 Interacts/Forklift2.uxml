@@ -1,7 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="position: absolute; height: 210px; width: 450px; top: 245px; left: 175px; background-color: rgb(191, 217, 214);" />
-    <ui:Label text="Forklift2" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 262px; left: 293px; width: auto; font-size: 24px; color: rgb(0, 0, 0);" />
-    <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 469px; height: 86px; width: 94px; justify-content: flex-start; bottom: 12px;" />
-    <ui:Button text="Interact" display-tooltip-when-elided="true" name="interact" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 261px; height: 86px; width: 94px; justify-content: flex-start; bottom: 4px;" />
-    <ui:Label text="Forklllllllllift" display-tooltip-when-elided="true" style="position: absolute; top: 313px; left: 180px; color: rgb(0, 0, 0); width: 440px;" />
+    <ui:VisualElement style="position: absolute; height: 208px; width: 572px; top: 30%; left: 30%; background-color: rgb(191, 217, 214); display: flex;">
+        <ui:Button text="Exit" display-tooltip-when-elided="true" name="closeMenu" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 352px; height: 86px; width: 94px; justify-content: flex-start; bottom: 7px; background-color: rgb(137, 59, 66);" />
+        <ui:Button text="Interact" display-tooltip-when-elided="true" name="interact" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 112px; height: 86px; width: 230px; justify-content: flex-start; bottom: 6px; background-color: rgb(27, 135, 36);" />
+        <ui:Label text="Flavor Text Here" display-tooltip-when-elided="true" style="position: absolute; top: 47px; left: 72px; color: rgb(0, 0, 0); width: 440px; -unity-text-align: upper-center;" />
+        <ui:Label text="Forklift  2" display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 5px; left: 239px; width: auto; font-size: 24px; color: rgb(0, 0, 0); -unity-font-style: bold;" />
+    </ui:VisualElement>
 </ui:UXML>
