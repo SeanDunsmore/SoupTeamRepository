@@ -53,7 +53,13 @@ public class PeteMenu1 : MonoBehaviour
 
     void TalkPressed()
     {
-         VisualElement1.SetEnabled(false);
+
+        Interactpad1.SetActive(true);
+        Interactpad2.SetActive(true);
+        Interactpad3.SetActive(true);
+        Interactpad4.SetActive(true);
+
+        VisualElement1.SetEnabled(false);
          VisualElement2.SetEnabled(true);
 
         VisualElement2.visible = true;

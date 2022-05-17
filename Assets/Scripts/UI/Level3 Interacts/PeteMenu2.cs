@@ -65,6 +65,8 @@ public class PeteMenu2 : MonoBehaviour
 
             interactMenu.SetActive(false);
 
+
+
             GlobalVariableStore.OML3Open = false;
             
         }

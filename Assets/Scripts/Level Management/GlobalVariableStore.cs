@@ -199,6 +199,13 @@ public class GlobalVariableStore : MonoBehaviour
         if (Level == 3)
         {
 
+            if (SupervisorL34)
+            {
+                LevelExit.GetComponent<MeshRenderer>().material = Material1;
+                LevelExitLight.color = Color.green;
+            }
+
+
         }
 
 

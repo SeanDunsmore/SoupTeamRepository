@@ -8,6 +8,7 @@ public class Level2ScreenUI : MonoBehaviour
 
     public GameObject UI;
     public Button Magnet1;
+    public Button PauseButton;
     public IMGUIContainer Magnet2;
     public Toggle Pete;
     public Toggle Supervisor1;
@@ -125,6 +126,23 @@ public class Level2ScreenUI : MonoBehaviour
     }
 
 
+    void PauseButtonPressed()
+    {
+
+        if (!GlobalVariableStore.IsPaused)
+        {
+            GlobalVariableStore.IsPaused = true;
+        }
+        else if (GlobalVariableStore.IsPaused)
+        {
+            GlobalVariableStore.IsPaused = false;
+            Time.timeScale = 1;
+        }
+
+
+
+    }
+
     void setUpButton()
     {
 
@@ -132,10 +150,13 @@ public class Level2ScreenUI : MonoBehaviour
         var root = GetComponent<UIDocument>().rootVisualElement;
 
         Magnet1 = root.Q<Button>("Magnify");
-     
+
+        PauseButton = root.Q<Button>("PauseButton");
 
         Magnet1.clicked += MagnetButtonPressed;
-     
+
+        PauseButton.clicked += PauseButtonPressed;
+
 
 
         isSetup = true;
