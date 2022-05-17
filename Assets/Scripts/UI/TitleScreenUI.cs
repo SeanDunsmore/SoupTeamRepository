@@ -12,7 +12,9 @@ public class TitleScreenUI : MonoBehaviour
     public Button LevelSelectButton;
     public Button ExitButton;
     public Button CreditsButton;
-
+    public Button ExitCredits;
+    public VisualElement Credits;
+    public VisualElement MainMenu;
 
 
     public bool isSetup = false;
@@ -50,10 +52,20 @@ public class TitleScreenUI : MonoBehaviour
 
     void CreditsButtonPressed()
     {
+        MainMenu.SetEnabled(false);
+        Credits.visible = true;
+
         Debug.Log("Credits Button Pressed");
         
     }
 
+    void ExitCreditsButtonPressed()
+    {
+        MainMenu.SetEnabled(true);
+        Credits.visible = false;
+        Debug.Log("Exit Credits Button Pressed");
+
+    }
 
     void setUpButton()
     {
@@ -64,10 +76,17 @@ public class TitleScreenUI : MonoBehaviour
         LevelSelectButton = root.Q<Button>("levelSelect");
         ExitButton = root.Q<Button>("Exit");
         CreditsButton = root.Q<Button>("Credits");
+        ExitCredits = root.Q<Button>("ExitCredit");
+
+        MainMenu = root.Q<VisualElement>("MainMenu");
+        Credits = root.Q<VisualElement>("CreditsElement");
+
+        Credits.visible = false;
 
         LevelSelectButton.clicked += LevelSelectButtonPressed;
         ExitButton.clicked += ExitButtonPressed;
         CreditsButton.clicked += CreditsButtonPressed;
+        ExitCredits.clicked += ExitCreditsButtonPressed;
 
 
         isSetup = true;
