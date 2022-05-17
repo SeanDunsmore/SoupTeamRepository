@@ -19,7 +19,7 @@ public class LoadScreen : MonoBehaviour
     void Start()
     {
         
-        TimeTarget = 3000; // = Rnd.Next(3, 9);
+        TimeTarget = 1500; // = Rnd.Next(3, 9);
 
     }
 
