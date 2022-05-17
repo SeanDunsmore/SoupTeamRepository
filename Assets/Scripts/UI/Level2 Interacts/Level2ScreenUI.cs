@@ -74,7 +74,7 @@ public class Level2ScreenUI : MonoBehaviour
 
 
 
-        if (GlobalVariableStore.SupervisorL21)
+        if (GlobalVariableStore.SupervisorCheckL21)
         {
             Supervisor1.value = true;
         }
@@ -82,7 +82,7 @@ public class Level2ScreenUI : MonoBehaviour
         {
             Supervisor1.value = false;
         }
-        if (GlobalVariableStore.SupervisorL22)
+        if (GlobalVariableStore.SupervisorCheckL22)
         {
             Supervisor2.value = true;
         }
@@ -90,7 +90,7 @@ public class Level2ScreenUI : MonoBehaviour
         {
             Supervisor2.value = false;
         }
-        if (GlobalVariableStore.SupervisorL23)
+        if (GlobalVariableStore.SupervisorCheckL23)
         {
             Supervisor3.value = true;
         }
@@ -100,7 +100,7 @@ public class Level2ScreenUI : MonoBehaviour
         }
 
 
-        if (GlobalVariableStore.SupervisorL24)
+        if (GlobalVariableStore.SupervisorCheckL24)
         {
             Pete.value = true;
         }
@@ -109,7 +109,17 @@ public class Level2ScreenUI : MonoBehaviour
             Pete.value = false;
         }
 
+        if (GlobalVariableStore.exitOpen)
+        {
 
+            ExitSet.SetEnabled(true);
+
+        }
+        else
+        {
+            ExitSet.SetEnabled(false);
+
+        }
 
 
         //GlobalVariableStore.InteractableObject.OnFocused(GlobalVariableStore.PlayerTrans);

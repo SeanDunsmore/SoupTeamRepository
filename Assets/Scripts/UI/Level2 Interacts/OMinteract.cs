@@ -9,10 +9,16 @@ public class OMinteract : MonoBehaviour
     public GameObject interactMenu;
 
     public Button closeMenu;
+    public Button closeMenu2;
     public Button CinteractButton;
 
     public Label Text;
     public Label WrongText;
+    public VisualElement VisualElement1;
+    public VisualElement VisualElement2;
+
+    public VisualElement PeteGlad;
+    public VisualElement PeteSad;
 
     public bool isSetup = false;
 
@@ -59,18 +65,21 @@ public class OMinteract : MonoBehaviour
 
             GlobalVariableStore.SupervisorL24 = true;
             GlobalVariableStore.SupervisorCheckL24 = true;
-            Time.timeScale = 1;
+            VisualElement1.SetEnabled(false);
+            VisualElement1.visible = false;
+            VisualElement2.SetEnabled(true);
+            VisualElement2.visible = true;
 
-            isSetup = false;
-
-            interactMenu.SetActive(false);
-           
+            GlobalVariableStore.exitOpen = true;
 
         }
         else
         {
             WrongText.visible = true;
             Text.visible = false;
+
+            PeteSad.visible = true;
+            PeteGlad.visible = false;
 
             if (GlobalVariableStore.SupervisorL21 == false)
             {
@@ -94,7 +103,17 @@ public class OMinteract : MonoBehaviour
 
     }
 
-   
+    void closeMenu2Pressed()
+    {
+
+        Debug.Log("Exit Menu Button Pressed");
+        Time.timeScale = 1;
+
+        isSetup = false;
+
+        interactMenu.SetActive(false);
+
+    }
 
     void setUpButton()
     {
@@ -104,19 +123,34 @@ public class OMinteract : MonoBehaviour
 
         closeMenu = root.Q<Button>("closeMenu");
 
+        closeMenu2 = root.Q<Button>("closeMenu2");
+
         CinteractButton = root.Q<Button>("CorrectInteract");
 
         Text = root.Q<Label>("Text");
 
         WrongText = root.Q<Label>("WrongText");
 
+        PeteGlad = root.Q<VisualElement>("PeteGlad");
+
+        PeteSad = root.Q<VisualElement>("PeteSad");
+
+        VisualElement1 = root.Q<VisualElement>("VisualElement1");
+
+        VisualElement2 = root.Q<VisualElement>("VisualElement2");
+
         WrongText.visible = false;
+
+        PeteSad.visible = false;
+
+        VisualElement2.visible = false;
 
         closeMenu.clicked += closeMenuPressed;
 
         CinteractButton.clicked += CinteractButtonPressed;
 
-      
+        closeMenu2.clicked += closeMenu2Pressed;
+
         isSetup = true;
 
 
