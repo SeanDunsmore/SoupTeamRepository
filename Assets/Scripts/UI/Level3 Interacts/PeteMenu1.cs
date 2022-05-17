@@ -21,6 +21,8 @@ public class PeteMenu1 : MonoBehaviour
     public Label Wrongtext2;
     public Label Righttext1;
     public Label Righttext2;
+    public VisualElement PeteGlad;
+    public VisualElement PeteSad;
 
     public GameObject Interactpad1;
     public GameObject Interactpad2;
@@ -61,7 +63,7 @@ public class PeteMenu1 : MonoBehaviour
 
         VisualElement1.SetEnabled(false);
          VisualElement2.SetEnabled(true);
-
+        text1.visible = true;
         VisualElement2.visible = true;
 
         GlobalVariableStore.ForkOpen = true;
@@ -79,7 +81,8 @@ public class PeteMenu1 : MonoBehaviour
             Wrongtext2.visible = false;
             Righttext2.visible = false;
 
-
+            PeteSad.visible = false;
+            PeteGlad.visible = true;
             Righttext1.visible = true;
             GlobalVariableStore.SupervisorL31 = true;
         }
@@ -89,6 +92,8 @@ public class PeteMenu1 : MonoBehaviour
             Wrongtext2.visible = false;
             Righttext1.visible = false;
             Righttext2.visible = false;
+            PeteSad.visible = true;
+            PeteGlad.visible = false;
 
             Wrongtext1.visible = true;
 
@@ -109,7 +114,8 @@ public class PeteMenu1 : MonoBehaviour
             Wrongtext2.visible = false;
             Righttext1.visible = false;
 
-
+            PeteSad.visible = false;
+            PeteGlad.visible = true;
             Righttext2.visible = true;
 
 
@@ -122,6 +128,8 @@ public class PeteMenu1 : MonoBehaviour
             Wrongtext1.visible = false;
             Righttext1.visible = false;
             Righttext2.visible = false;
+            PeteSad.visible = true;
+            PeteGlad.visible = false;
 
             Wrongtext2.visible = true;
 
@@ -215,6 +223,11 @@ public class PeteMenu1 : MonoBehaviour
 
         ExitButton2 = root.Q<Button>("closeMenu2");
 
+        PeteGlad = root.Q<VisualElement>("PeteGlad");
+
+        PeteSad = root.Q<VisualElement>("PeteSad");
+
+
         text1 = root.Q<Label>("Text1");
         Wrongtext1 = root.Q<Label>("Text2");
         Wrongtext2 = root.Q<Label>("Text3");
@@ -229,7 +242,7 @@ public class PeteMenu1 : MonoBehaviour
         Wrongtext2.visible = false;
         Righttext1.visible = false;
         Righttext2.visible = false;
-
+        PeteSad.visible = false;
         Wrongtext1.visible =false;
 
 

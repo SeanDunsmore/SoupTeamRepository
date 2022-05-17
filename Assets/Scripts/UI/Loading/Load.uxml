@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement style="position: relative; height: 100%; width: 100%; top: 0; left: 0; background-color: rgb(191, 217, 214); right: 0; bottom: 0;">
         <ui:Label text="Loading..." display-tooltip-when-elided="true" name="Label" style="position: absolute; top: 80%; left: 40%; width: 354px; font-size: 40px; color: rgb(0, 0, 0);" />
-        <ui:VisualElement style="background-image: url(&apos;/Assets/Materials/UI Assets/Pete_Poster.png&apos;); height: 50%; -unity-slice-right: 0; right: auto; position: absolute; left: 40%; top: 80px; width: 167px;" />
+        <ui:VisualElement style="background-image: url(&apos;/Assets/Materials/UI Assets/Pete_Poster.png&apos;); height: 223px; -unity-slice-right: 0; right: auto; position: absolute; left: 40%; top: 40%; width: 169px;" />
     </ui:VisualElement>
 </ui:UXML>

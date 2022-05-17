@@ -188,6 +188,14 @@ public class Level3screenUIDoc : MonoBehaviour
             Supervisor3.value = false;
         }
 
+        if (GlobalVariableStore.SupervisorCheckL34)
+        {
+            Pete.value = true;
+        }
+        else
+        {
+            Supervisor3.value = false;
+        }
 
 
 

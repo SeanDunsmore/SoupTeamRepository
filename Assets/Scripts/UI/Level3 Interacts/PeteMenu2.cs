@@ -14,6 +14,9 @@ public class PeteMenu2 : MonoBehaviour
     public Label Text;
     public Label WrongText;
 
+    public VisualElement PeteGlad;
+    public VisualElement PeteSad;
+
     public bool isSetup = false;
 
 
@@ -60,20 +63,25 @@ public class PeteMenu2 : MonoBehaviour
             GlobalVariableStore.SupervisorL34 = true;
             GlobalVariableStore.SupervisorCheckL34 = true;
             Time.timeScale = 1;
-
+            GlobalVariableStore.OML3Open = false;
+            GlobalVariableStore.OMOpen = false;
+            GlobalVariableStore.exitOpen = true;
             isSetup = false;
 
             interactMenu.SetActive(false);
 
 
 
-            GlobalVariableStore.OML3Open = false;
+            
+
             
         }
         else
         {
             WrongText.visible = true;
             Text.visible = false;
+            PeteSad.visible = true;
+            PeteGlad.visible = false;
 
             if (GlobalVariableStore.SupervisorL33 == false)
             {
@@ -104,7 +112,13 @@ public class PeteMenu2 : MonoBehaviour
 
         WrongText = root.Q<Label>("WrongText");
 
+        PeteGlad = root.Q<VisualElement>("PeteGlad");
+
+        PeteSad = root.Q<VisualElement>("PeteSad");
+
         WrongText.visible = false;
+
+        PeteSad.visible = false;
 
         closeMenu.clicked += closeMenuPressed;
 
