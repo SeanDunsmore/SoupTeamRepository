@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="position: absolute; height: 302px; width: 766px; top: 120px; left: 25%; background-color: rgb(191, 217, 214);">
+    <ui:VisualElement style="position: absolute; height: 302px; width: 766px; top: 30%; left: 30%; background-color: rgb(191, 217, 214);">
         <ui:Label text="Okay Pete&apos;s asked me to head through to the office to file a report, let&apos;s go" display-tooltip-when-elided="true" style="position: absolute; top: 94px; left: 53px; color: rgb(0, 0, 0); width: 408px; height: 355px; font-size: 20px; -unity-text-align: upper-center; white-space: normal;" />
         <ui:Button text="Begin!" display-tooltip-when-elided="true" name="ExitInteract" style="-unity-text-align: middle-center; white-space: nowrap; position: absolute; top: auto; left: 181px; height: 96px; width: 173px; justify-content: flex-start; bottom: 31px; background-color: rgb(26, 135, 36); font-size: 20px;" />
         <ui:VisualElement style="background-image: url(&apos;/Assets/Materials/UI Assets/Pete_Happy.png&apos;); height: 336px; -unity-slice-right: 0; right: 0; position: absolute; left: 468px; top: auto; bottom: 0;" />

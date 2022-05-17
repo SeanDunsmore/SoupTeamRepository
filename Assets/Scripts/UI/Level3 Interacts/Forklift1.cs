@@ -62,6 +62,23 @@ public class Forklift1 : MonoBehaviour
 
         GlobalVariableStore.ForkliftCheck1 = true;
         GlobalVariableStore.Forklift1 = true;
+
+        Debug.Log("Exit Menu Button Pressed");
+        Time.timeScale = 1;
+
+        isSetup = false;
+
+        interactMenu.SetActive(false);
+
+        
+        if (GlobalVariableStore.ForkliftCheck1 && GlobalVariableStore.ForkliftCheck2)
+        {
+            GlobalVariableStore.OMOpen = true;
+
+        }
+
+
+
     }
 
     void setUpButton()
