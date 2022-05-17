@@ -70,10 +70,16 @@ public class SuperInteract : MonoBehaviour
             interactMenu2.SetActive(true);
             GlobalVariableStore.Menu2Check = true;
 
+            WrongText.visible = false;
+            Text.visible = true;
+            PeteSad.visible = false;
+            PeteGlad.visible = true;
 
             interactpad1.SetActive(true);
             interactpad2.SetActive(true);
             interactpad3.SetActive(true);
+
+
 
             GlobalVariableStore.OMOpen = false;
             GlobalVariableStore.TankOpen = false;
